@@ -1,9 +1,10 @@
-import { ScheduleContext } from "@/app/page";
+
+import { ScheduleContext } from "@/app/context";
 import { useContext } from "react";
 import { Button } from "./ui/button"
 import { toast } from "./ui/use-toast"
 
-export default function scheduler(){
+const Scheduler = () => {
     const {txt} = useContext(ScheduleContext);
     return (
       <div className="mt-5">
@@ -14,3 +15,4 @@ export default function scheduler(){
       </div>
     )
 }
+export default Scheduler;
